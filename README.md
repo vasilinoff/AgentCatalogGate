@@ -52,7 +52,7 @@ when it matters.
 ## Install
 
 ```bash
-git clone https://github.com/<you>/AgentCatalogGate ~/AgentCatalogGate
+git clone https://github.com/vasilinoff/AgentCatalogGate ~/AgentCatalogGate
 cp ~/AgentCatalogGate/hooks/agent-catalog-gate.py ~/.claude/hooks/
 cp ~/AgentCatalogGate/agent-catalog.example.json ~/.claude/agent-catalog.json
 ```
