@@ -1,0 +1,127 @@
+{
+  "_about": "Task categories for subagents. Every generic Agent call names one as a [slug] at the start of its description and uses its model and effort. No category fits: add one here before the call. A deliberate different model/effort: put (override: reason) in the description.",
+  "categories": {
+    "triage": {
+      "when": "Read a ticket or card and classify it, pick a label, answer a yes/no about it",
+      "model": "haiku",
+      "effort": "low",
+      "examples": [
+        "Classify ticket PROJ-15",
+        "Which column is this card in"
+      ]
+    },
+    "lookup": {
+      "when": "Find files or symbols, read a page, fetch one known fact; no judgement beyond finding it",
+      "model": "haiku",
+      "effort": "low",
+      "examples": [
+        "Where is the rating prompt armed",
+        "Read this docs page and quote the limit"
+      ]
+    },
+    "chore": {
+      "when": "Mechanical edits with a clear rule: strip comments or history, rename, reformat, bulk move, regenerate a file",
+      "model": "sonnet",
+      "effort": "low",
+      "examples": [
+        "Strip stale comments from tests",
+        "Remove history notes from README"
+      ]
+    },
+    "test-qa": {
+      "when": "Run tests, walk a flow in a simulator or browser, collect evidence, report pass/fail",
+      "model": "sonnet",
+      "effort": "medium",
+      "examples": [
+        "Run tests and QA for PROJ-20",
+        "Re-run QA at new HEAD"
+      ]
+    },
+    "implement": {
+      "when": "Write or change code for a ticket, fix, refactor or feature whose design is already decided",
+      "model": "sonnet",
+      "effort": "medium",
+      "examples": [
+        "Implement PROJ-4 fix with test",
+        "Extract Stats into a module"
+      ]
+    },
+    "research": {
+      "when": "Gather facts from code, docs or the web across several sources and summarise them",
+      "model": "sonnet",
+      "effort": "medium",
+      "examples": [
+        "Research facts for a blog post",
+        "Check which APIs report workouts"
+      ]
+    },
+    "data": {
+      "when": "Pull and crunch numbers: analytics, store data, logs, spreadsheets",
+      "model": "sonnet",
+      "effort": "medium",
+      "examples": [
+        "Analytics funnel by week",
+        "Ad keyword report"
+      ]
+    },
+    "media-build": {
+      "when": "Produce media from an agreed brief: reel or cartoon episode, art generation, prototype scene",
+      "model": "sonnet",
+      "effort": "medium",
+      "examples": [
+        "Build episode 13 of a reel series",
+        "Generate concept art",
+        "Prototype a scene"
+      ]
+    },
+    "persona": {
+      "when": "Play a user or character in a simulated run or playtest",
+      "model": "sonnet",
+      "effort": "medium",
+      "examples": [
+        "Playtest as a character",
+        "User review as a non-technical reader"
+      ]
+    },
+    "review": {
+      "when": "Find bugs or risks: code review, requirements review, security review, test or repo audit, adversarial check",
+      "model": "opus",
+      "effort": "high",
+      "examples": [
+        "Independent requirements review",
+        "Bug hunt in the reporting module",
+        "Security review"
+      ]
+    },
+    "copy": {
+      "when": "Text people will read: product copy, translations and localisation, articles, letters, editing, study notes",
+      "model": "opus",
+      "effort": "high",
+      "examples": [
+        "Localize Japanese",
+        "Editor pass on a draft",
+        "Tone pass on Russian UI copy"
+      ]
+    },
+    "critique": {
+      "when": "Judge design or creative work: UX, visual, reel, game feel, mascot or brand council seat",
+      "model": "opus",
+      "effort": "high",
+      "examples": [
+        "UX critique of a page",
+        "Critic review of three reels",
+        "Brand council seat"
+      ]
+    },
+    "design": {
+      "when": "Decide architecture, product direction or a plan; debug something not yet understood",
+      "model": "opus",
+      "effort": "high",
+      "examples": [
+        "Redesign proposal",
+        "Architecture for a pipeline",
+        "Debug a crash nobody understands yet"
+      ]
+    }
+  }
+}
